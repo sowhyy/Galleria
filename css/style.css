@@ -15,8 +15,6 @@ div#wrap {
   
 }
 
-
-
 /*  FIXME:  헤더 시작 */
 header { 
   background-color: #fff; 
@@ -63,7 +61,8 @@ nav ul.gnb {
 }
 nav ul.gnb > li {
   width: 140px;  height: 80px;
-  font-size: 18px; font-weight: bold; 
+  font-size: 18px;
+  font-weight: 600; 
   text-align: center;
   position: relative;
   float: left;
@@ -79,7 +78,7 @@ nav ul.gnb:hover > li > ul {
   display: block;
 }
 nav ul.gnb > li.list:hover > a {
-  font-weight: bold;
+  font-weight: 600; 
   border-bottom: 4px solid red;
 }
 
@@ -116,28 +115,34 @@ nav ul.gnb > li.list:hover > div.store > ul> li > div.store_box {
 
 /* 이미지 네비 _ 이미지 주소 */
 .img1 {
+  width: 400px;  height: 300px;
   background-size: cover;
-  background: url("https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80");
+  background: url("../img/main_nav1.jpg");
 }
 .img2 {
+  width: 400px;  height: 300px;
   background-size: cover;
-  background: url("https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80");
+  background: url("../img/main_nav2.jpg");
 }
 .img3 {
+  width: 400px;  height: 300px;
   background-size: cover;
-  background: url("https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80");
+  background: url("../img/main_nav3.jpg");
 }
 .img4 {
+  width: 400px;  height: 300px;
   background-size: cover;
-  background: url("https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80");
+  background: url("../img/main_nav4.jpg");
 }
 .img5 {
+  width: 400px;  height: 300px;
   background-size: cover;
-  background: url("https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80");
+  background: url("../img/main_nav5.jpg");
 }
 .img6 {
+  width: 400px;  height: 300px;
   background-size: cover;
-  background: url("https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80");
+  background: url("../img/main_nav6.jpg");
 }
 
 /* 이미지 네비 _ 마우스 호버 */
@@ -179,25 +184,29 @@ nav ul.gnb > li.list:hover > div.store > ul> li > div.store_box {
 .img .store_data .target {
   width: 400px;
 }
+.img:hover .store_data .target {
+  width: 400px;
+  background-color: rgb(255, 102, 0, .2);
+}
 .img .store_data .target_sub {
   width: 50%;
   border-bottom: 2px solid #f60;
-  z-index: 20;
+  z-index: 15;
   margin: 0 100px;
 }
 .img:hover .store_data .target_sub {
   width: 50%;
   border-bottom: 4px solid #f60;
-  z-index: 20;
+  z-index: 15;
 }
-
 
 
 /* 텍스트 네비 */
 nav ul.gnb > li > ul { 
   width: 100%; height: 300px;
   top: 80px; left: 0;
-  font-size: 16px; font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
   background-color: #fff;
 
   display: none; 
@@ -221,7 +230,7 @@ nav ul.gnb > li > ul > li > a {
 }
 nav ul.gnb > li > ul > li > a:hover {
   border-bottom: 2px solid #f60;
-  font-weight: bold;
+  font-weight: 600; 
 }
 
 /* 헤더 끝*/
@@ -240,21 +249,70 @@ main {
 /* 메인페이지 - css bg img url 변경  */
 main .main2 {
   width: 1280px;  height: 600px;
-  background: url("../img/cover-summary.jpg");
+  background: url("../img/main2.jpg");
 }
 main .sub{
   width: 1280px;  height: 400px;
 }
 main .sub1 {
   width: 640px;  height: 400px;
-  background-image: url("../img/main-1.jpg");
+  background-image: url("../img/main_sub1.jpg");
   float: left;
 }
 main .sub2 {
   width: 640px;  height: 400px;
-  background-image: url("../img/main-2.jpg");
+  background-image: url("../img/main_sub2.jpg");
   float: right;
 }
+
+main .main2 {
+  color: #fff;
+}
+main .main2 div {
+  width: 50%;
+  color: #fff;
+  padding: 100px ;
+}
+main .main2 h2{
+  font-size: 50px;
+}
+main .main2 div p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+main .main2 div button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 30px;
+
+  background-color: #1fe0;
+  border: 1px solid #fff;
+  color: #fff;
+}
+main .main2 div button:hover {
+  background-color: #fff;
+  color: #003057;
+}
+
+main .sub p {
+  color: #fff;
+  font-size: 30px;
+  padding: 80px ;
+}
+main .sub button {
+  font-size: 18px;
+  margin-left: 80px;
+  margin-top: 70px;
+
+  background-color: #1fe0;
+  color: #fff;
+}
+main .sub button:hover {
+  font-weight: 600;
+}
+
+
+
 
 /* 메인 슬라이드 _!수정 주의! */
 .swiper {
@@ -265,7 +323,6 @@ main .sub2 {
 }
 .bullet {
   opacity: .5;
-
 }
 /* 슬라이드 이미지 사이즈  */
 .swiper-slide img {
@@ -294,7 +351,6 @@ main .sub2 {
   align-items: center;
 }
 
-
 /* 메인페이지 끝 */
 
 
@@ -310,7 +366,7 @@ section {
 }
 section a {
   text-align: center;
-  font-weight: bold;
+  font-weight: 600; 
   font-size: 30px;
   padding-top: 20px;
   display: block;
@@ -320,27 +376,29 @@ section div.time {
   width: 1280px;
   height: 1000px;
   background-size: contain;
-  background-image: url("../img/time.png");
+  background-image: url("../img/time.jpg");
   color: #fff;
 }
 section div.time > p {
   text-align: left;
-  font-weight: bold;
-  font-size: 70px;
-  margin-top: 450px;
-  margin-left: 20px;
+  margin-top: 170px;
+  margin-left: 90px;
+
+  font-size: 150px;
+  font-weight: lighter;
+  line-height: 1;
 }
 
 /* 컨텐츠 */
 section .info {
   width: 1280;  height: 210px;
-  background-image: url("../img/cover-personnel.jpg");
+  background-image: url("../img/sub_info.jpg");
   color: #fff;
 }
 section .info p {
   width: 1280;  height: 40px;
   text-align: left;
-  font-weight: bold;
+  font-weight: 600; 
   font-size: 25px;
   margin-left: 70px;
 }
@@ -355,32 +413,52 @@ section .info-today p {
 }
 section .info-today span {
   color: #f60;
-  font-weight: bold;
+  font-weight: 600; 
 }
 
 section .map {
   width: 1280px;  height: 210px;
-  background-image: url("../img/map.jpg");
+  background-image: url("../img/sub_map.jpg");
 }
 section .floor {
   width: 1280px;  height: 210px;
-  background-image: url("../img/floor.jpg");
+  background-image: url("../img/sub_floor.jpg");
   color: #fff;
 }
 
 
-section .sub{
+section .sub_sub {
   width: 1280px;  height: 400px;
 }
 section .sub1 {
   width: 640px;  height: 400px;
-  background-image: url("../img/sub1.jpg");
+  background-image: url("../img/sub_sub1.jpg");
   float: left;
 }
 section .sub2 {
   width: 640px;  height: 400px;
-  background-image: url("../img/sub2.jpg");
+  background-image: url("../img/sub_sub2.jpg");
   float: right;
+}
+
+section .sub_sub p {
+  color: #fff;
+  font-size: 30px;
+  padding: 80px ;
+}
+section .sub_sub button {
+  margin-left: 80px;
+  margin-top: 70px;
+
+  background-color: #1fe0;
+  color: #fff;
+}
+section .sub_sub button a {
+  font-size: 18px;
+  font-weight: 400;
+}
+section .sub_sub button a:hover {
+  font-weight: 600;
 }
 
 /* 서브끝 */
@@ -397,7 +475,7 @@ footer {
   width: 1280px; height: 80px; 
   background-color: #003057;
   color: white; 
-  font-weight: bold;
+  font-weight: 600; 
   text-align: center;
 }
 .foot_fnb ul.fnb {
@@ -429,6 +507,7 @@ select {
   background-color: #fff;
   width: 1280px;  height: 210px;
   font-size: 16px;
+  font-weight: 400;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
