@@ -448,7 +448,7 @@ section .sub_sub p {
 }
 section .sub_sub button {
   margin-left: 80px;
-  margin-top: 70px;
+  margin-top: 60px;
 
   background-color: #1fe0;
   color: #fff;
