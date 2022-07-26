@@ -1,2 +1,0 @@
-# galleria
-hanwha Galleria
