@@ -309,6 +309,7 @@ main .sub button {
 }
 main .sub button:hover {
   font-weight: 600;
+  color: #003057;
 }
 
 
@@ -459,6 +460,7 @@ section .sub_sub button a {
 }
 section .sub_sub button a:hover {
   font-weight: 600;
+  color: #003057;
 }
 
 /* 서브끝 */
